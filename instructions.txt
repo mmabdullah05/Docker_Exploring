@@ -1,0 +1,7 @@
+#Run docker command
+docker run -d -p 80:80 docker/getting-started
+-d: start in detached mode -- runs in the back ground
+-p 80:80 : Maps ports 80 of this machine to 80 on the api
+
+Stop docker command
+docker stop $(docker ps -q)
